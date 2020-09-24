@@ -31,8 +31,7 @@ def q4
   # 以下に回答を記載
   
   # 以下は変更しないで下さい
-  p sports.delete(nil)
-  p sports
+  p sports.compact
 end
 
 def q5
