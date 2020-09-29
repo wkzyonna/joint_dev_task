@@ -60,7 +60,7 @@ def q7
   p array
 end
 
-def q8
+def q8f
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
@@ -75,7 +75,7 @@ def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names.map.with_index {|name,i| puts "会員No.#{i+1} #{name}さん"}
+  names.map.with_index(1) {|name,i| puts "会員No.#{i} #{name}さん"}
 end
 
 def q10
@@ -83,11 +83,7 @@ def q10
 
   # 以下に回答を記載
   foods.each do |food|
-    if food.include?("うに")
-      puts "好物です"
-    else
-      puts "まぁまぁ好きです"
-    end
+    puts food.include?("うに") ? "好物です" : "まぁまぁ好きです"
   end
 end
 
