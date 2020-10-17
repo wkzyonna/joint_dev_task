@@ -225,7 +225,6 @@ class Zoo
   # 以下に回答を記載
   def initialize(**params)
     @name = params[:name]
-    @entry_fee = params[:entry_fee]
     @infant = params[:entry_fee][:infant]
     @children = params[:entry_fee][:children]
     @adult = params[:entry_fee][:adult]
